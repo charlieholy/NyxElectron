@@ -23,7 +23,7 @@ window.onload=function () {
 
         var path = fp.path
         console.log(path)
-        fs.readFile(path,(err,data)=>{
+        fs.readFile(path,'latin1',(err,data)=>{
             console.log(data)
             content.innerHTML = data;
         })
